@@ -1,43 +1,3 @@
-<template>
-<section>
-  <header><h1>My Friends</h1></header>
-  <ul>
-    <friend-contact name="Manuel Lorenz"
-                    phone-number="0123 45658 90"
-                    email="manuel@gmail.com">
-    </friend-contact>
-    <friend-contact name="Julie Jones"
-                    phone-number="0125 44589 52"
-                    email="Juliel@gmail.com">
-    </friend-contact>
-  </ul>
-</section>
-</template>
-<script>
-export default {
-  data(){
-       return{
-         friends:[
-           {
-             id:'Manuel',
-             name:'Manuel Lorenz',
-             phone:'0123 45658 90',
-             email:'manuel@gmail.com'
-
-           },
-           {
-             id:'Julie',
-             name:'Julie Jones',
-             phone:'0125 44589 52',
-             email:'Juliel@gmail.com'
-           },
-           ],
-       };
-  },
-
-};
-</script>
-<style>
 * {
   box-sizing: border-box;
 }
@@ -101,5 +61,3 @@ header {
   border-color: #ec3169;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.26);
 }
-
-</style>
