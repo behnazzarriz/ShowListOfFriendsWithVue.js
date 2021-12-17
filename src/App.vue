@@ -2,13 +2,12 @@
 <section>
   <header><h1>My Friends</h1></header>
   <ul>
-    <friend-contact name="Manuel Lorenz"
-                    phone-number="0123 45658 90"
-                    email="manuel@gmail.com">
-    </friend-contact>
-    <friend-contact name="Julie Jones"
-                    phone-number="0125 44589 52"
-                    email="Juliel@gmail.com">
+    <friend-contact  v-for="friend in friends" :key="friend.id"
+        :name="friend.name"
+        :phone-number="friend.phone"
+        :email="friend.email"
+        :is-favorite="true"
+    >
     </friend-contact>
   </ul>
 </section>
@@ -22,14 +21,13 @@ export default {
              id:'Manuel',
              name:'Manuel Lorenz',
              phone:'0123 45658 90',
-             email:'manuel@gmail.com'
-
+             email:'manuel@gmail.com',
            },
            {
              id:'Julie',
              name:'Julie Jones',
              phone:'0125 44589 52',
-             email:'Juliel@gmail.com'
+             email:'Juliel@gmail.com',
            },
            ],
        };
