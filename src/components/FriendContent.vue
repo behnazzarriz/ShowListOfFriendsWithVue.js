@@ -9,6 +9,9 @@
     <li><strong>Phone:</strong>{{phoneNumber}}</li>
     <li><strong>Email:</strong>{{email}}</li>
   </ul>
+  <br>
+  <br>
+  <button @click="$emit('delete',id)">Delete</button>
 </li>
 </template>
 <script>
@@ -18,6 +21,7 @@ export default {
     'phoneNumber',
     'email'
   ],*/
+  emits:['delete'],
   props:{
     id:{
       type:String,

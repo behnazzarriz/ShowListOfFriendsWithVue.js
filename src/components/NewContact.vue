@@ -12,7 +12,7 @@
       <label>Email :</label>
       <input type="text" v-model="email">
     </div>
-    <button>add new contact</button>
+    <button>Add new contact</button>
   </form>
 </template>
 <script>
